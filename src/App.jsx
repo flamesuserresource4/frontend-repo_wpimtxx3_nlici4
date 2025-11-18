@@ -1,3 +1,4 @@
+import BackgroundFX from './components/BackgroundFX';
 import Hero from './components/Hero';
 import Energies from './components/Energies';
 import Pathways from './components/Pathways';
@@ -6,6 +7,9 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="min-h-screen w-full bg-black text-white">
+      {/* Global flame effects (orange + blue) that persist while scrolling */}
+      <BackgroundFX />
+
       {/* Hero with Spline full-width cover */}
       <Hero />
 
